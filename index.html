@@ -18,22 +18,12 @@
     style="width:800px;height:1000px;"                  
                   
                   background-color="#70BCD1"
-                  shadow-intensity="1.0"
-                  shadow-softness = 0
+                  shadow-intensity="0.7"
                   camera-controls
-                  camera-target = "0m 1.2m 0m"
-                  camera-orbit = "45deg 90deg 50%"
                   interaction-prompt="auto"
                   auto-rotate ar magic-leap>
                   
     
     </model-viewer>
-    <button id="custom-ar-button" slot="ar-button">Start AR</button>
   </body>
-  <script>
-    document.querySelector('#above-button').addEventListener('click', (event) => {
-      const modelViewer = document.querySelector("model-viewer");
-      modelViewer.setAttribute('camera-orbit', "0deg 0deg 50%");
-    });
-  </script>
 </html>
